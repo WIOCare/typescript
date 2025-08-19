@@ -219,3 +219,13 @@ const response1: APIResponse<string> = {
 };
 
 console.log(response1);
+
+//tuples
+let a = [1, "two", { p: 3 }];
+
+a[0] = 2; // number
+
+
+let b:[ number, string, object] = [4, "world", { t: 5 }];
+
+b.push()
