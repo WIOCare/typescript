@@ -146,20 +146,41 @@
 // players.push(david);
 // players.push(alex);
 
-interface RectangleOptions {
-  width: number;
-  length: number;
-}
+// interface RectangleOptions {
+//   width: number;
+//   length: number;
+// }
 
-function drawRectangle(options: RectangleOptions) {
-  let width = options.width;
-  let length = options.length;
-}
+// function drawRectangle(options: RectangleOptions) {
+//   let width = options.width;
+//   let length = options.length;
+// }
 
-let threeDOptions = {
-  width: 20,
-  length: 30,
-  height: 10,
+// let threeDOptions = {
+//   width: 20,
+//   length: 30,
+//   height: 10,
+// };
+
+// drawRectangle(threeDOptions);
+
+const addID = <
+  T extends {
+    name: string;
+    age: number;
+  }
+>(
+  obj: T
+) => {
+  let id = Math.floor(Math.random() * 100);
+  return { ...obj, id };
 };
 
-drawRectangle(threeDOptions);
+let user = addID({
+  name: "David",
+  age: 40,
+  county : "Bangladesh",
+});
+
+// let user = "David";
+addID(user);
