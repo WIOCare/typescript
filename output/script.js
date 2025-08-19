@@ -100,12 +100,72 @@
 //     console.log(`${this.name} from ${this.county} is playing at the age of ${this.age}.`);
 //   }
 // }
-import { Player } from './classes/Player.js';
-const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
-const tamim = new Player('Tamim', 34, 'Bangladesh');
-const shakib = new Player('Shakib', 36, 'Bangladesh');
-console.log(mashrafi.name);
-const players = [];
-players.push(shakib);
-players.push(mashrafi);
+// import { Player } from "./classes/Player.js";
+// import { IsPlayer } from "./interfaces/IsPlayer.js";
+// const alex = new Player("alex", 40, "Bangladesh");
+// const david = new Player("david", 34, "Bangladesh");
+// let jason: IsPlayer;
+// jason = new Player("json", 36, "Bangladesh");
+// console.log(jason.name);
+// const players: IsPlayer[] = [];
+// players.push(david);
+// players.push(alex);
+// interface RectangleOptions {
+//   width: number;
+//   length: number;
+// }
+// function drawRectangle(options: RectangleOptions) {
+//   let width = options.width;
+//   let length = options.length;
+// }
+// let threeDOptions = {
+//   width: 20,
+//   length: 30,
+//   height: 10,
+// };
+// drawRectangle(threeDOptions);
+// const addID = <
+//   T extends {
+//     name: string;
+//     age: number;
+//   }
+// >(
+//   obj: T
+// ) => {
+//   let id = Math.floor(Math.random() * 100);
+//   return { ...obj, id };
+// };
+// let user = addID({
+//   name: "David",
+//   age: 40,
+//   county: "Bangladesh",
+// });
+// // let user = "David";
+// addID(user);
+//generics
+// interface APIResponse<T> {
+//   status: number;
+//   type: string;
+//   data: T;
+// }
+// const response1: APIResponse<string> = {
+//   status: 200,
+//   type: "success",
+//   data: "This is a response",
+// };
+//ENUMS
+var RType;
+(function (RType) {
+    RType[RType["success"] = 0] = "success";
+    RType[RType["failure"] = 1] = "failure";
+    RType[RType["unauthenticated"] = 2] = "unauthenticated";
+    RType[RType["forbidden"] = 3] = "forbidden";
+})(RType || (RType = {}));
+const response1 = {
+    status: 200,
+    type: RType.success,
+    data: "This is a response",
+};
+console.log(response1);
+export {};
 //# sourceMappingURL=script.js.map

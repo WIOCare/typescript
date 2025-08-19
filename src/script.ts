@@ -186,14 +186,36 @@
 // addID(user);
 
 //generics
+// interface APIResponse<T> {
+//   status: number;
+//   type: string;
+//   data: T;
+// }
+
+// const response1: APIResponse<string> = {
+//   status: 200,
+//   type: "success",
+//   data: "This is a response",
+// };
+
+//ENUMS
+enum RType {
+  success,
+  failure,
+  unauthenticated,
+  forbidden,
+}
+
 interface APIResponse<T> {
   status: number;
-  type: string;
+  type: RType;
   data: T;
 }
 
 const response1: APIResponse<string> = {
   status: 200,
-  type: "success",
+  type: RType.unauthenticated,
   data: "This is a response",
 };
+
+console.log(response1);
