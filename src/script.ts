@@ -164,23 +164,36 @@
 
 // drawRectangle(threeDOptions);
 
-const addID = <
-  T extends {
-    name: string;
-    age: number;
-  }
->(
-  obj: T
-) => {
-  let id = Math.floor(Math.random() * 100);
-  return { ...obj, id };
+// const addID = <
+//   T extends {
+//     name: string;
+//     age: number;
+//   }
+// >(
+//   obj: T
+// ) => {
+//   let id = Math.floor(Math.random() * 100);
+//   return { ...obj, id };
+// };
+
+// let user = addID({
+//   name: "David",
+//   age: 40,
+//   county: "Bangladesh",
+// });
+
+// // let user = "David";
+// addID(user);
+
+//generics
+interface APIResponse<T> {
+  status: number;
+  type: string;
+  data: T;
+}
+
+const response1: APIResponse<string> = {
+  status: 200,
+  type: "success",
+  data: "This is a response",
 };
-
-let user = addID({
-  name: "David",
-  age: 40,
-  county : "Bangladesh",
-});
-
-// let user = "David";
-addID(user);
