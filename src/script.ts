@@ -83,27 +83,94 @@
 //   console.log(`Hello ${user.name}, you are ${user.age} years old.`);
 // };
 
-// class Player {
-//   constructor(
-//     private name: string,
-//     public age: number,
-//     readonly country: string
-//   ) {}
+// let add: (x: number, y: number, z: string) => void;
 
-//   play() {
-//     console.log(`${this.name} is playing in ${this.country}.`);
+// add = (a: number, b: number) =>{
+// return a + b;
+// }
+
+// let calculate: (a: number, b: number, c: string) => number;
+
+// calculate = (x: number, y: number, z: string) => {
+//   if (z === 'add') {
+//     return x + y;
+//   }
+//   else{
+//     return x - y;
 //   }
 // }
 
-import { Player } from "./classes/Player.js";
+// console.log(calculate(5, 3, 'minus')); // Output: 8
+// let userDetails: (
+//   id: number | string,
+//   userInfo: {
+//     name: string;
+//     age: number;
+//   }
+// ) => void;
 
-const alex = new Player("Alex", 37, "Bangladesh");
-const david = new Player("David", 35, "Bangladesh");
+// userDetails = (
+//   id: number | string,
+//   userInfo: {
+//     name: string;
+//     age: number;
+//   }
+// ) => {};
 
-console.log(david.age);
-console.log(david.country);
+// class Player {
+//   name: string;
+//   age: number;
+//   county: string;
 
-const Players: Player[] = [];
+//   constructor(n: string, a: number, c: string) {
+//     this.name = n;
+//     this.age = a;
+//     this.county = c;
+//   }
+//   play() {
+//     console.log(`${this.name} from ${this.county} is playing at the age of ${this.age}.`);
+//   }
+// }
 
-Players.push(alex);
-Players.push(david);
+// import { Player } from "./classes/Player.js";
+// import { IsPlayer } from "./interfaces/IsPlayer.js";
+// const alex = new Player("alex", 40, "Bangladesh");
+// const david = new Player("david", 34, "Bangladesh");
+// let jason: IsPlayer;
+
+// jason = new Player("json", 36, "Bangladesh");
+
+// console.log(jason.name);
+// const players: IsPlayer[] = [];
+
+// players.push(david);
+// players.push(alex);
+
+// interface RectangleOptions {
+//   width: number;
+//   length: number;
+// }
+
+// function drawRectangle(options: RectangleOptions) {
+//   let width = options.width;
+//   let length = options.length;
+// }
+
+// let threeDOptions = {
+//   width: 20,
+//   length: 30,
+//   height: 10,
+// };
+
+// drawRectangle(threeDOptions);
+
+// GENERICS
+const addID = (obj: object): object => {
+  let id = Math.floor(Math.random() * 100);
+  return { ...obj, id };
+};
+
+let user = addID({
+  name: "Mashrafi",
+  age: 40,
+});

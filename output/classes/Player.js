@@ -1,11 +1,11 @@
 export class Player {
-    constructor(name, age, country) {
-        this.name = name;
-        this.age = age;
-        this.country = country;
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.county = c;
     }
     play() {
-        console.log(`${this.name} is playing in ${this.country}.`);
+        console.log(`${this.name} from ${this.county} is playing at the age of ${this.age}.`);
     }
 }
 //# sourceMappingURL=Player.js.map

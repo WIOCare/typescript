@@ -1,8 +1,8 @@
 export declare class Player {
-    private name;
+    name: string;
     age: number;
-    readonly country: string;
-    constructor(name: string, age: number, country: string);
+    county: string;
+    constructor(n: string, a: number, c: string);
     play(): void;
 }
 //# sourceMappingURL=Player.d.ts.map

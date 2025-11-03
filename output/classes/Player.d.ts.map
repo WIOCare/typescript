@@ -1,1 +1,1 @@
-{"version":3,"file":"Player.d.ts","sourceRoot":"","sources":["../../src/classes/Player.ts"],"names":[],"mappings":"AAAA,qBAAa,MAAM;IAEf,OAAO,CAAC,IAAI;IACL,GAAG,EAAE,MAAM;IAClB,QAAQ,CAAC,OAAO,EAAE,MAAM;gBAFhB,IAAI,EAAE,MAAM,EACb,GAAG,EAAE,MAAM,EACT,OAAO,EAAE,MAAM;IAG1B,IAAI;CAGL"}
+{"version":3,"file":"Player.d.ts","sourceRoot":"","sources":["../../src/classes/Player.ts"],"names":[],"mappings":"AAAA,qBAAa,MAAM;IACjB,IAAI,EAAE,MAAM,CAAC;IACb,GAAG,EAAE,MAAM,CAAC;IACZ,MAAM,EAAE,MAAM,CAAC;gBAEH,CAAC,EAAE,MAAM,EAAE,CAAC,EAAE,MAAM,EAAE,CAAC,EAAE,MAAM;IAK3C,IAAI;CAGL"}

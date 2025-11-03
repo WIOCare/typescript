@@ -59,22 +59,53 @@
 // const sayHello = (user: userType) => {
 //   console.log(`Hello ${user.name}, you are ${user.age} years old.`);
 // };
-// class Player {
-//   constructor(
-//     private name: string,
-//     public age: number,
-//     readonly country: string
-//   ) {}
-//   play() {
-//     console.log(`${this.name} is playing in ${this.country}.`);
+// let add: (x: number, y: number, z: string) => void;
+// add = (a: number, b: number) =>{
+// return a + b;
+// }
+// let calculate: (a: number, b: number, c: string) => number;
+// calculate = (x: number, y: number, z: string) => {
+//   if (z === 'add') {
+//     return x + y;
+//   }
+//   else{
+//     return x - y;
 //   }
 // }
-import { Player } from "./classes/Player.js";
-const alex = new Player("Alex", 37, "Bangladesh");
-const david = new Player("David", 35, "Bangladesh");
-console.log(david.age);
-console.log(david.country);
-const Players = [];
-Players.push(alex);
-Players.push(david);
+// console.log(calculate(5, 3, 'minus')); // Output: 8
+// let userDetails: (
+//   id: number | string,
+//   userInfo: {
+//     name: string;
+//     age: number;
+//   }
+// ) => void;
+// userDetails = (
+//   id: number | string,
+//   userInfo: {
+//     name: string;
+//     age: number;
+//   }
+// ) => {};
+// class Player {
+//   name: string;
+//   age: number;
+//   county: string;
+//   constructor(n: string, a: number, c: string) {
+//     this.name = n;
+//     this.age = a;
+//     this.county = c;
+//   }
+//   play() {
+//     console.log(`${this.name} from ${this.county} is playing at the age of ${this.age}.`);
+//   }
+// }
+import { Player } from './classes/Player.js';
+const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
+const tamim = new Player('Tamim', 34, 'Bangladesh');
+const shakib = new Player('Shakib', 36, 'Bangladesh');
+console.log(mashrafi.name);
+const players = [];
+players.push(shakib);
+players.push(mashrafi);
 //# sourceMappingURL=script.js.map
